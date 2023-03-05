@@ -70,6 +70,7 @@ $$('.testimonials__slider',el=>{
         },
         effect: "coverflow",
         centeredSlides: true,
+        initialSlide: 1,
         slidesPerView: 2,
         spaceBetween: 10,
         coverflowEffect: {
