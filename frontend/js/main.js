@@ -70,8 +70,7 @@ $$('.testimonials__slider',el=>{
         },
         effect: "coverflow",
         centeredSlides: true,
-        initialSlide: 1,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
         coverflowEffect: {
             rotate: 30,
@@ -82,9 +81,39 @@ $$('.testimonials__slider',el=>{
         },
         breakpoints: {
             769: {
+                initialSlide: 1,
                 slidesPerView: 3,
                 spaceBetween: 30,
             }
         }
       });
-})
+});
+
+$$('[data-popup]',el=>{
+    el.addEventListener('click',(e)=>{
+        const popup = $$('.popup__item.'+el.dataset.popup);
+        if(h_el(popup)){
+            e.preventDefault();
+            const windowWidth = $$('html')[0].offsetWidth;
+            popup[0].classList.add('active');
+            $$('body')[0].classList.add('modal_open');
+            const windowWidthCashe = $$('html')[0].offsetWidth;
+            $$('html')[0].style.marginRight = windowWidthCashe - windowWidth + 'px'
+        }
+    })
+});
+
+$$('.popup__close',el=>{
+    el.addEventListener('click',(e)=>{
+
+        const popup = e.target.closest('.popup__item');
+        popup.classList.remove('active');
+
+        const openPopups = $$('.popup__item.active');
+        if(!h_el(openPopups)){
+            $$('body')[0].classList.remove('modal_open');
+            $$('html')[0].style.marginRight = '';
+        }
+    })
+});
+

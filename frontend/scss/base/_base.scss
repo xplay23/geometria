@@ -15,6 +15,7 @@ img {
 }
 :root{
   font-size: (16 / 19.2 * 1vw);
+  background: #121212;
   @media (max-width: 768px) {
   
     font-size: (16 / 5 * 1vw);
@@ -29,6 +30,9 @@ body {
   // font-size: 110px;
   line-height: 1.1;
   -webkit-text-size-adjust: 100%;
+  &.modal_open{
+    overflow: hidden;
+  }
 }
 
 .body-wrap {
@@ -50,4 +54,8 @@ body {
   @media (max-width: 768px) {
     max-width: 28.65rem;
   }
+}
+
+[data-popup]{
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
 .main_bnr{
     margin-bottom: em(100);
+    position: relative;
     .swiper-pagination{
         top: 0;
         bottom: 0;
@@ -22,6 +23,14 @@
             background: #E4022F;
         }
     }
+    &__fly {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: em(242);
+        z-index: 1;
+        margin: 0 0 -9.6em 33.7em;
+    }
     @media (max-width: 768px) {
         margin-bottom: 2.55em;
         .swiper-pagination{
@@ -35,6 +44,10 @@
             height: em(4);
             width: 4.975em;
             margin: 0 em(26 / 2);
+        }
+        &__fly{
+            width: 9.125em;
+            margin: 0 0 -8.4em 9.7em;
         }
     }
 }

@@ -58,6 +58,13 @@
             margin: 0 em(24 / 2,24);
         }
     }
+    &__fly{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 24.75em;
+        margin: 24em 0 0 -71em;
+    }
     @media (max-width: 768px) {
         // max-width: 21em;
         margin-bottom: 2.55em;
@@ -87,6 +94,10 @@
         }
         &__descr{
             display: none;
+        }
+        &__fly{
+            width: 16.75em;
+            margin: -17.1em 0 0 5.5em;
         }
     }
 }

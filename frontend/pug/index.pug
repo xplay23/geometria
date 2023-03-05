@@ -32,6 +32,9 @@ html
 								source(media="(min-width: 769px)", srcset="./public/img/slider/slide3_desctop.jpg")
 								img(src="./public/img/slider/slide3_mob.jpg", alt="")
 					.swiper-pagination
+				.main_bnr__fly 
+					img(src="./public/img/fly/fly_1.png", alt="")
+				
 			.about_company
 				.about_company__button
 					a(href="#").button.button--red.button--big
@@ -94,6 +97,8 @@ html
 									|  months
 								.special_packages__item_count -35%
 							.special_packages__more + basic video for free
+				.special_packages__fly 
+					img(src="./public/img/fly/fly_2.png", alt="")
 
 			.average
 				.container
@@ -111,6 +116,8 @@ html
 								span REQUEST CALLBACK
 							button(data-popup="contacts").button.button--transparent.button--middle
 								span CONTACT US
+				.average__fly
+					img(src="./public/img/fly/fly3.png", alt="")
 			
 			.package
 				.container
@@ -185,7 +192,8 @@ html
 									td $1.290
 									td $6.960
 									td $12.360
-
+				.package__fly
+					img(src="./public/img/fly/fly4.png", alt="")
 			.led_trucks
 				.container
 					.led_trucks__wrap
@@ -214,7 +222,8 @@ html
 							span REQUEST CALLBACK
 						button(data-popup="contacts").button.button--transparent.button--middle
 							span CONTACT US
-			
+				.led_trucks__fly
+					img(src="./public/img/fly/fly5.png", alt="")
 			.production
 				.container
 					.production__head Production
@@ -260,7 +269,8 @@ html
 						span REQUEST CALLBACK
 					button(data-popup="contacts").button.button--transparent.button--middle
 						span CONTACT US
-
+				.production__fly
+					img(src="./public/img/fly/fly6.png", alt="")
 			.testimonials
 				.container
 					.testimonials__head Client testimonials
@@ -269,23 +279,23 @@ html
 					.testimonials__slider_wrap.swiper-wrapper
 						.testimonials__slide.swiper-slide
 							//- video(src="./public/video/")
-							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.png", alt="")
-							.testimonials__play(data-popu="video1")
+							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
+							.testimonials__play(data-popup="video1")
 								img(src="./public/img/play_button.svg", alt="")
 						.testimonials__slide.swiper-slide
 							//- video(src="./public/video/")
-							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.png", alt="")
-							.testimonials__play(data-popu="video1")
+							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
+							.testimonials__play(data-popup="video1")
 								img(src="./public/img/play_button.svg", alt="")
 						.testimonials__slide.swiper-slide
 							//- video(src="./public/video/")
-							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.png", alt="")
-							.testimonials__play(data-popu="video2")
+							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
+							.testimonials__play(data-popup="video2")
 								img(src="./public/img/play_button.svg", alt="")
 						.testimonials__slide.swiper-slide
 							//- video(src="./public/video/")
-							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.png", alt="")
-							.testimonials__play(data-popu="video2")
+							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
+							.testimonials__play(data-popup="video2")
 								img(src="./public/img/play_button.svg", alt="")
 
 					.swiper-pagination
@@ -335,6 +345,8 @@ html
 						.our_clients__button.our_clients__button--next.swiper-button-next
 							include ../../public/img/next_ic.svg
 						.swiper-pagination
+				.our_clients__fly
+					img(src="./public/img/fly/fly7.png", alt="")
 			footer.footer
 				.footer__wrap
 					.footer__logo_side
@@ -356,14 +368,99 @@ html
 			
 			.popup 
 				.popup__item.video1
-					.popup__content
-						.popup__close 
+					.popup__close.popup__close--overlay
+					.popup__content_wrap.popup__content_wrap--video
+						.popup__close.popup__close--button
 							img(src="./public/img/close.svg", alt="")
-						video(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4" controls="" preload='auto' playsinline='' plays-inline='' poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.png")
+						.popup__content
+							video(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4" controls="" preload='auto' playsinline='' plays-inline='' poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
+				
 				.popup__item.video2
-					.popup__content
-						.popup__close 
+					.popup__close.popup__close--overlay
+					.popup__content_wrap.popup__content_wrap--video
+						.popup__close.popup__close--button
 							img(src="./public/img/close.svg", alt="")
-						video(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.mp4" preload='auto' controls="" playsinline='' plays-inline='' poster="./public/video/Brooklyn-Motors/Brooklyn-Motors.png")
+						.popup__content
+							video(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.mp4" preload='auto' controls="" playsinline='' plays-inline='' poster="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg")
+				
+				.popup__item.callback.form_error
+					.popup__close.popup__close--overlay
+					.popup__content_wrap
+
+						.popup__close.popup__close--button
+							img(src="./public/img/close.svg", alt="")
+						.popup__request.popup__request--success
+							span Request accepted
+						.popup__request.popup__request--error
+							span Request denied, please try again later
+						.popup__content
+							form.form
+								label.form__label
+									.form__input_name 
+										| Full name 
+										span *
+									.form__input
+										input(type="text" name="" placeholder="First Name")
+								.form__grid
+									label.form__label
+										.form__input_name 
+											| Email 
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Email")
+									label.form__label.form__label--error.form__label--phone
+										.form__input_name 
+											| Phone Number 
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Phone Number")
+										.form__error
+											| wrong phone number
+								.form__submit 
+									button.button.button--submit.button--red 
+										span send REQUEST
+
+				.popup__item.contacts.form_success
+					.popup__close.popup__close--overlay
+					.popup__content_wrap
+						.popup__close.popup__close--button
+							img(src="./public/img/close.svg", alt="")
+						
+						.popup__request.popup__request--success
+							span Request accepted
+						.popup__request.popup__request--error
+							span Request denied, please try again later
+						.popup__content
+							form.form
+								label.form__label
+									.form__input_name 
+										| Full name 
+										span *
+									.form__input
+										input(type="text" name="" placeholder="First Name")
+								.form__grid
+									label.form__label
+										.form__input_name 
+											| Email 
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Email")
+									label.form__label.form__label--error.form__label--phone
+										.form__input_name 
+											| Phone Number 
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Phone Number")
+										.form__error
+											| wrong phone number
+								label.form__label
+									.form__input_name 
+										| Message
+									.form__input
+										input(type="text" name="" placeholder="type your message")
+
+								.form__submit 
+									button.button.button--submit.button--red 
+										span send REQUEST
 
 		include includes/foot

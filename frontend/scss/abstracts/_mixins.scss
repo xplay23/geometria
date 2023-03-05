@@ -135,7 +135,7 @@
     overflow-y: auto;
     scrollbar-color: $background-color $foreground-color;
     scrollbar-width: thin;
-    transition: scrollbar-color 0.3s ease-out;
+    // transition: scrollbar-color 0.3s ease-out;
     &:hover{
       scrollbar-color: mix($foreground-color, white, 60%);
     }

@@ -35,6 +35,9 @@
         font-size: rem(32);
         padding: 0.48333em 1.13333em;
     }
+    &--submit {
+        text-transform: uppercase;
+    }
     @media (max-width: 768px) {
         font-size: rem(14);
         width: em(160,14);

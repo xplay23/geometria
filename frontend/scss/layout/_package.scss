@@ -1,5 +1,6 @@
 .package{
     margin-bottom: 5.75em;
+    position: relative;
     &__head{
         font-size: em(110);
         font-family: 'Oswald';
@@ -44,6 +45,13 @@
             }
         }
     }
+    &__fly{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: em(256);
+        margin-bottom: -8.8em;
+    }
     @media (max-width: 768px) {
         margin-bottom: 2.95em;
         .container{
@@ -77,6 +85,9 @@
             font-size: em(20);
             height: em(61.5,20);
             padding: 0 em(20,20);
+        }
+        &__fly{
+            display: none;
         }
     }
     

@@ -3,6 +3,7 @@
     background: rgba(#4F4F4F,.5);
     margin-bottom: 6.85em;
     padding: 4.4em 0;
+    position: relative;
     &__container{
         max-width: 95.7em;
         margin: auto;
@@ -80,6 +81,13 @@
         font-size: em(34);
         padding-right: 1.4em;
     }
+    &__fly {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin: -7.9em 0 0 -38.3em;
+        width: em(362);
+    }
     @media (max-width: 768px) {
         margin-bottom: 2.55em;
         padding: 2.5em 0 2.3em;
@@ -119,6 +127,10 @@
         &__more{
             font-size: em(16);
             padding-right: 1.4em;
+        }
+        &__fly {
+            margin: -7.2em 0 0 -16.5em;
+            width: 9.225em;
         }
     }
 }

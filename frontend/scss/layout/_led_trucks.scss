@@ -90,6 +90,13 @@
             margin: 0 em(24 / 2,24);
         }
     }
+    &__fly{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: em(266);
+        margin-top: -5.2em;
+    }
     @media (max-width: 768px) {
         margin-bottom: 3.05em;
         &__wrap{
@@ -157,6 +164,9 @@
             }
         }
         &__buttons_wrap{
+            display: none;
+        }
+        &__fly{
             display: none;
         }
     }
