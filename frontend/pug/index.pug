@@ -114,76 +114,77 @@ html
 			
 			.package
 				.container
-					.package__head Choose your package 
-					table.package__table
-						thead 
-							tr 
-								td Packages
-								td Monthly <br>Impressions
-								td 1 Month
-								td 6 Months <br>(10% Discount)
-								td 12 Months <br>(20% Discount)
-						tbody
-							tr 
-								td Manhattan
-								td 2.9M
-								td $990
-								td $5.340
-								td $9.480
-							tr 
-								td Brooklyn
-								td 34.8M
-								td $2.590
-								td $14.340
-								td $25.080
-							tr 
-								td Queens
-								td 11.2M
-								td $990
-								td $5.340
-								td $9480
-							tr 
-								td Florida
-								td 6.9M
-								td $990
-								td $5.340
-								td $9480
-							tr 
-								td Philadelphia
-								td 18.6M
-								td $1.490
-								td $8.040
-								td $14.280
-							tr 
-								td New Jersey
-								td 14.7M
-								td $990
-								td $5.340
-								td $9480
-							tr 
-								td Chicago
-								td 8M
-								td $1.490
-								td $8.040
-								td $14.280
-							tr 
-								td MatchPoint Network
-								td 10.2M
-								td $990
-								td $5.340
-								td $9.480
-							tr 
-								td NetCost Markets
-								td 34.5M
-								td $1.614 <br>any 1 location
-								td $1.614 <br>any 1 location
-								td $1.614 <br>for any 1 location
-							tr 
-								td Elevators and <br>Car Services
-								td 40M
-								td $1.290
-								td $6.960
-								td $12.360
+					.package__head Choose your <br>package
+					.package__table_wrap
+						table.package__table
+							thead 
+								tr 
+									td Packages
+									td Monthly <br>Impressions
+									td 1 Month
+									td 6 Months <br>(10% Discount)
+									td 12 Months <br>(20% Discount)
+							tbody
+								tr 
+									td Manhattan
+									td 2.9M
+									td $990
+									td $5.340
+									td $9.480
+								tr 
+									td Brooklyn
+									td 34.8M
+									td $2.590
+									td $14.340
+									td $25.080
+								tr 
+									td Queens
+									td 11.2M
+									td $990
+									td $5.340
+									td $9480
+								tr 
+									td Florida
+									td 6.9M
+									td $990
+									td $5.340
+									td $9480
+								tr 
+									td Philadelphia
+									td 18.6M
+									td $1.490
+									td $8.040
+									td $14.280
+								tr 
+									td New Jersey
+									td 14.7M
+									td $990
+									td $5.340
+									td $9480
+								tr 
+									td Chicago
+									td 8M
+									td $1.490
+									td $8.040
+									td $14.280
+								tr 
+									td MatchPoint Network
+									td 10.2M
+									td $990
+									td $5.340
+									td $9.480
+								tr 
+									td NetCost Markets
+									td 34.5M
+									td $1.614 <br>any 1 location
+									td $1.614 <br>any 1 location
+									td $1.614 <br>for any 1 location
+								tr 
+									td Elevators and <br>Car Services
+									td 40M
+									td $1.290
+									td $6.960
+									td $12.360
 
 			.led_trucks
 				.container
@@ -248,14 +249,17 @@ html
 							.production__count $190
 							.production__descr (per hour)
 
-					.production__img
-						img(src="./public/img/production.png", alt="")
+				.production__img
+					picture 
+						source(media="(min-width: 769px)", srcset="../public/img/production.png")
+						img(src="./public/img/production_mob.png", alt="")
+					
 
-					.production__buttons_wrap
-						button(data-popup="callback").button.button--red.button--middle
-							span REQUEST CALLBACK
-						button(data-popup="contacts").button.button--transparent.button--middle
-							span CONTACT US
+				.production__buttons_wrap
+					button(data-popup="callback").button.button--red.button--middle
+						span REQUEST CALLBACK
+					button(data-popup="contacts").button.button--transparent.button--middle
+						span CONTACT US
 
 			.testimonials
 				.container
@@ -351,12 +355,12 @@ html
 							img(src="./public/img/pdf.svg", alt="")
 			
 			.popup 
-				.popup__item.video2
+				.popup__item.video1
 					.popup__content
 						.popup__close 
 							img(src="./public/img/close.svg", alt="")
 						video(src="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.mp4" controls="" preload='auto' playsinline='' plays-inline='' poster="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.png") 
-				.popup__item.video1
+				.popup__item.video2
 					.popup__content
 						.popup__close 
 							img(src="./public/img/close.svg", alt="")

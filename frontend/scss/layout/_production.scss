@@ -43,7 +43,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        max-width: em(1058);
+        max-width: 57.125em;
         img{
             width: 100%;
         }
@@ -56,6 +56,37 @@
         width: 100%;
         .button{
             margin: 0 em(24 / 2,24);
+        }
+    }
+    @media (max-width: 768px) {
+        // max-width: 21em;
+        margin-bottom: 2.55em;
+        &__head{
+            font-size: em(40);
+            margin: auto;
+            max-width: em(336,40);
+            margin-bottom: 1.10909em;
+        }
+        &__img{
+            position: relative;
+            max-width: 28.425em;
+            margin-left: auto;
+            margin-bottom: 0.9em;
+        }
+        &__wrap{
+            margin: 0 auto 2.6em;
+            max-width: 21em;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2.3em 1em;
+        }
+        &__min_head{
+            font-size: em(18);
+        }
+        &__count{
+            font-size: em(50);
+        }
+        &__descr{
+            display: none;
         }
     }
 }

@@ -65,4 +65,29 @@
             // left: 100%;
         }
     }
+    @media (max-width: 768px) {
+        margin-bottom: 4.25em;
+        &__head{
+            font-size: em(40);
+            margin: auto;
+            max-width: em(336,40);
+            text-align: left;
+            margin-bottom: 0.60909em;
+        }
+        &__slider{
+            max-width: em(336);
+            margin: auto;
+        }
+        &__button{
+            display: none;
+        }
+        .swiper-pagination{
+            display: block;
+        }
+        .swiper-pagination-bullet{
+            width: em(50);
+            margin: 0 em(4);
+        }
+    }
+    
 }

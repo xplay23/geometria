@@ -90,4 +90,74 @@
             margin: 0 em(24 / 2,24);
         }
     }
+    @media (max-width: 768px) {
+        margin-bottom: 3.05em;
+        &__wrap{
+            padding-bottom: 0;
+            flex-direction: column;
+            padding-right: 0;
+            margin-bottom: 2.6em;
+        }
+        &__head{
+            order: -1;
+            font-size: em(40);
+            max-width: 8.5em;
+            margin: auto;
+            width: 100%;
+        }
+        &__img{
+            position: relative;
+            top: 0;
+            width: 44.25em;
+            margin-left: -7em;
+            margin-top: -6.3em;
+            margin-bottom: -4.6em;
+        }
+        &__descr{
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-right: 1.6em;
+        }
+        &__descr_top{
+            font-size: em(30);
+            margin-right: em(22,30);
+            margin-bottom: 0;
+        }
+        &__descr_count{
+            font-size: em(30);
+            margin-right: em(17,30);
+        }
+        &__descr_content{
+            font-size: em(14);
+        }
+        &__weeks{
+            flex-direction: column;
+            padding-left: 6.4em;
+            margin-bottom: 0;
+        }
+        &__weeks_item{
+            margin-bottom: 3.4em;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__weeks_head{
+            font-size: em(20);
+            margin-bottom: 0.5em;
+        }
+        &__weeks_count{
+            font-size: em(80);
+            &:before{
+                bottom: -0.1em;
+                width: 0.3em;
+                height: 0.47em;
+            }
+        }
+        &__buttons_wrap{
+            display: none;
+        }
+    }
 }

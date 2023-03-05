@@ -37,6 +37,9 @@ body {
   overflow: hidden;
   background: #121212 url(../img/bg.jpg) center top/cover no-repeat;
   color: #fff;
+  @media (max-width: 768px) {
+    background-image: url('../img/bg__mob.jpg');
+  }
 }
 
 .container {

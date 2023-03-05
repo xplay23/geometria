@@ -32,9 +32,9 @@ $$('.main_bnr__slider',el=>{
 
 $$('.our_clients__slider',el=>{
     const swiper = new Swiper(el, {
-        slidesPerView: 4,
+        slidesPerView: 2,
         grid: {
-            rows: 2,
+            rows: 3,
             fill: "row",
         },
         spaceBetween: 30,
@@ -46,7 +46,17 @@ $$('.our_clients__slider',el=>{
             el: $$(".swiper-pagination",el)[0],
             type: 'bullets',
             clickable: true,
+            dynamicBullets: true,
         },
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
+                grid: {
+                    rows: 2,
+                    fill: "row",
+                },
+            }
+        }
     });
 })
 
@@ -60,8 +70,8 @@ $$('.testimonials__slider',el=>{
         },
         effect: "coverflow",
         centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 10,
         coverflowEffect: {
             rotate: 30,
             stretch: 0,
@@ -69,5 +79,11 @@ $$('.testimonials__slider',el=>{
             modifier: 1,
             slideShadows: false,
         },
+        breakpoints: {
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
       });
 })

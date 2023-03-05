@@ -58,12 +58,14 @@
         }
     }
     @media (max-width: 768px) {
+        margin-bottom: 2.55em;
         &__head{
             font-size: em(24);
             flex-direction: row-reverse;
             justify-content: flex-end;
             padding: 0.2em 0 0.2em 2.3em;
             margin-left: 1em;
+            margin-bottom: 1.8em;
             &::after{
                 @include pseudo;
                 z-index: -1;
@@ -90,6 +92,18 @@
             br{
                 display: inline;
             }
+        }
+        &__buttons{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__buttons_img{
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: none;
+            margin: auto;
+            margin-top: 2.6em;
         }
     }
 }

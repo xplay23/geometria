@@ -38,4 +38,37 @@
             margin-bottom: -.1em;
         }
     }
+    @media (max-width: 768px) {
+        padding: 0 0 em(75);
+        &__wrap{
+            flex-direction: column;
+        }
+        &__logo_side{
+            margin-bottom: 2.6em;
+        }
+        &__socials_side{
+            flex-direction: column;
+        }
+        &__logo{
+            width: em(155);
+        }
+        &__tel{
+            font-size: em(20);
+            padding-left: em(20,20);
+            margin-left: em(30,20);
+        }
+        &__socials{
+            margin-right: 0;
+            margin-bottom: 2.9em;
+        }
+        .button{
+            font-size: rem(18);
+            text-transform: uppercase;
+            width: auto;
+            padding: 0.8em 1.43333em;
+            img{
+                display: none;
+            }
+        }
+    }
 }
