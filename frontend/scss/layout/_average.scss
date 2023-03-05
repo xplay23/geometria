@@ -1,0 +1,95 @@
+.average{
+    font-size: 1rem;
+    margin-bottom: 5.85em;
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: em(70);
+        font-family: 'Oswald';
+        font-weight: 500;
+        margin-bottom: 1.6em;
+        position: relative;
+        z-index: 0;
+    }
+    &__head_content{
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px #FFFFFF;
+        color: transparent;
+        br{
+            display: none;
+        }
+    }
+    &__head_count{
+        padding: em(43,70) 0 em(43,70) em(100,70);
+        position: relative;
+        z-index: 0;
+        &::after{
+            @include pseudo;
+            z-index: -1;
+            background: #E4022F;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 105%;
+            transform: skewX(-30deg);
+        }
+    }
+    &__buttons{
+        position: relative;
+    }
+    &__buttons_img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: em(287);
+        left: -2.7em;
+    }
+    &__buttons_wrap{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .button{
+            margin: 0 em(24 / 2,24);
+        }
+    }
+    @media (max-width: 768px) {
+        &__head{
+            font-size: em(24);
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            padding: 0.2em 0 0.2em 2.3em;
+            margin-left: 1em;
+            &::after{
+                @include pseudo;
+                z-index: -1;
+                background: #E4022F;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 105%;
+                transform: skewX(-30deg);
+            }
+        }
+        &__head_count{
+            font-size: em(40,24);
+            padding: 0;
+            margin-right: 0.5em;
+            
+            &::after{
+                display: none;
+            }
+        }
+        &__head_content{
+            -webkit-text-stroke: .4px #FFFFFF;
+            line-height: (32 / 24);
+            br{
+                display: inline;
+            }
+        }
+    }
+}

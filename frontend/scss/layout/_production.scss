@@ -1,0 +1,61 @@
+.production{
+    margin-bottom:5.95em;
+    position: relative;
+    &__head{
+        font-size: em(110);
+        font-family: 'Oswald';
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: em(100,110);
+    }
+    &__wrap{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5em 3em;
+        max-width: em(846);
+        margin-bottom: 7.35em;
+    }
+    &__icon{
+        width: em(50);
+        margin-bottom: em(24);
+        img{
+            width: 100%;
+        }
+    }
+    &__min_head{
+        font-weight: 700;
+        font-size: em(30);
+        line-height: (38 / 30);
+        margin-bottom: 0.2em;
+    }
+    &__count{
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: em(70);
+        margin-bottom: em(12,70);
+    }
+    &__descr{
+        font-size: em(24);
+        color: #979797;
+        font-weight: 400;
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: em(1058);
+        img{
+            width: 100%;
+        }
+    }
+    &__buttons_wrap{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .button{
+            margin: 0 em(24 / 2,24);
+        }
+    }
+}

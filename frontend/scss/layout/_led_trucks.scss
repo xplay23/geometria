@@ -1,0 +1,93 @@
+.led_trucks{
+    position: relative;
+    z-index: 0;
+    margin-bottom: em(100);
+    &__wrap{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 39.55em;
+        padding-right: 1.9em;
+    }
+    &__head{
+        order: 2;
+        font-size: em(110);
+        font-family: 'Oswald';
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__descr_top{
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: em(74);
+        text-transform: uppercase;
+        margin-bottom: 0.3em;
+    }
+    &__descr{
+        padding-top: 0.9em;
+    }
+    &__descr_bottom{
+        display: flex;
+        align-items: center;
+    }
+    &__descr_count{
+        font-size: em(110);
+        color: #E4022F;
+        font-family: 'Oswald';
+        font-weight: 500;
+        margin-right: em(17,110);
+    }
+    &__descr_content{
+        font-size: em(34);
+        font-weight: 700;
+    }
+    &__img {
+        position: absolute;
+        top: -13.3em;
+        left: 0;
+        width: 120.25em;
+        z-index: -1;
+        pointer-events: none;
+    }
+    &__weeks{
+        // display: grid;
+        // grid-template-columns: repeat(3,1fr);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: em(100);
+        padding-left: 3em;
+    }
+    &__weeks_head{
+        font-size: em(34);
+        font-weight: 700;
+        margin-bottom: -0.4em;
+    }
+    &__weeks_count{
+        font-size: em(100);
+        font-family: 'Oswald';
+        font-weight: 500;
+        position: relative;
+        z-index: 0;
+        &:before{
+            @include pseudo;
+            bottom: 0;
+            right: 100%;
+            width: em(25,100);
+            margin-right: 0.18em;
+            height: em(37,100);
+            background: #E4022F;
+            transform: skewX(-10deg);
+        }
+    }
+    &__buttons_wrap{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .button{
+            margin: 0 em(24 / 2,24);
+        }
+    }
+}

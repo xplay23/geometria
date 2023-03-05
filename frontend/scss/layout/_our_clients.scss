@@ -1,0 +1,68 @@
+.our_clients{
+    margin-bottom: em(100);
+    &__head{
+        font-size: em(110);
+        font-family: 'Oswald';
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0.7em;
+    }
+    &__slide{
+        height: 50% !important;
+        display: flex;
+    }
+    .swiper-pagination{
+        font-size: 1em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        display: none;
+    }
+    .swiper-pagination-bullet{
+        // display: flex;
+        height: em(3);
+        width: em(100);
+        margin: 0 em(26 / 2);
+        opacity: 1;
+        border-radius: 0;
+        background: #fff;
+        transition: background 300ms;
+        &-active{
+            background: #E4022F;
+        }
+    }
+    &__slider_main_wrap{
+        position: relative;
+    }
+    &__slider{
+        position: static;
+        max-width: em(1500);
+    }
+    &__button{
+        width: em(53);
+        height: auto;
+        margin: 0;
+        transform: translateY(-50%);
+        @include pointer{
+            path{
+                fill:#E4022F;
+            }
+        }
+        path{
+            fill:#fff;
+            transition: fill 300ms;
+        }
+        &:after{
+            display: none;
+        }
+        &--prev{
+            // right: 100%;
+            left: em(50);
+        }
+        &--next{
+            right: em(50);
+            // left: 100%;
+        }
+    }
+}

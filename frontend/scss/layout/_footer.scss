@@ -1,0 +1,41 @@
+.footer{
+    max-width: 113.7em;
+    margin: auto;
+    padding-bottom: em(50);
+    padding-right: 1.2em;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo_side{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        width: em(252);
+    }
+    &__tel{
+        font-size: em(34);
+        font-weight: 700;
+        margin-left: em(48,34);
+        padding: em((74 - 34) / 2,34) em(32,34);
+        border-left: em(3,34) solid #E4022F;
+    }
+    &__socials_side{
+        display: flex;
+        align-items: center;
+    }
+    &__socials{
+        display: grid;
+        grid-auto-flow: column;
+        margin-right: em(65);
+        gap: em(34);
+    }
+    .button{
+        padding: 0.6em 1.13333em 0.5em 1.4em;
+        img{
+            margin-bottom: -.1em;
+        }
+    }
+}

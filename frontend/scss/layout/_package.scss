@@ -1,0 +1,45 @@
+.package{
+    margin-bottom: 5.75em;
+    &__head{
+        font-size: em(110);
+        font-family: 'Oswald';
+        font-weight: 500;
+        margin-bottom: em(86,110);
+        text-transform: uppercase;
+    }
+    &__table{
+        width: 100%;
+        thead{
+            td{
+                font-size: em(35);
+                height: em(107,35);
+                background: #E4022F;
+                padding: 0 em(24,35);
+            }
+
+        }
+        tbody{
+            tr{
+                background: #000000;
+                &:nth-child(even){
+                    background: #222222;
+                }
+            }
+        }
+        td{
+            font-size: em(28);
+            height: em(94,28);
+            padding: 0 em(24,28);
+            border-right: 1px solid #4F4F4F;
+            vertical-align: middle;
+            text-align: right;
+            &:first-child{
+                text-align: left;
+            }
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+    
+}

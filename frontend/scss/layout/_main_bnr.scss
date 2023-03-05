@@ -1,0 +1,40 @@
+.main_bnr{
+    margin-bottom: em(100);
+    .swiper-pagination{
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: em(60);
+        width: em(6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet{
+        height: em(100);
+        margin: em(26 / 2) 0;
+        opacity: 1;
+        border-radius: 0;
+        background: #fff;
+        transition: background 300ms;
+        &-active{
+            background: #E4022F;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 2.55em;
+        .swiper-pagination{
+            position: relative;
+            right: 0;
+            width: 100%;
+            flex-direction: row;
+            margin-top: 1.6em;
+        }
+        .swiper-pagination-bullet{
+            height: em(4);
+            width: 4.975em;
+            margin: 0 em(26 / 2);
+        }
+    }
+}

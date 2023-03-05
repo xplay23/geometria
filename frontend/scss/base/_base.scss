@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+
+	&:focus {
+		outline: none;
+	}
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+:root{
+  font-size: (16 / 19.2 * 1vw);
+  @media (max-width: 768px) {
+  
+    font-size: (16 / 5 * 1vw);
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Futura PT';
+  font-weight: 500;
+  // font-size: 110px;
+  line-height: 1.1;
+  -webkit-text-size-adjust: 100%;
+}
+
+.body-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #121212 url(../img/bg.jpg) center top/cover no-repeat;
+  color: #fff;
+}
+
+.container {
+  // position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: rem(1500);
+  @media (max-width: 768px) {
+    max-width: 28.65rem;
+  }
+}

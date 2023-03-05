@@ -1,0 +1,365 @@
+- var title = "";
+doctype html
+html
+	include includes/head
+	body
+		.body-wrap
+			header.header
+				.header__wrap
+					.header__logo_side
+						.header__logo
+							img(src="./public/img/logo.svg", alt="")
+						.header__slogan
+							| Take your <span>brand</span>, <span>business</span>,<br> and <span>culture</span> to the next level
+					.header__buttons_side
+						button(data-popup="callback").button.button--red
+							span REQUEST CALLBACK
+						button(data-popup="contacts").button.button--transparent
+							span CONTACT US
+			.main_bnr
+				.main_bnr__slider.swiper
+					.main_bnr__slider_wrap.swiper-wrapper
+						.main_bnr__slide.swiper-slide
+							picture 
+								source(media="(min-width: 769px)", srcset="./public/img/slider/slide1_desctop.jpg")
+								img(src="./public/img/slider/slide1_mob.jpg", alt="")
+						.main_bnr__slide.swiper-slide
+							picture 
+								source(media="(min-width: 769px)", srcset="./public/img/slider/slide2_desctop.jpg")
+								img(src="./public/img/slider/slide2_mob.jpg", alt="")
+						.main_bnr__slide.swiper-slide
+							picture 
+								source(media="(min-width: 769px)", srcset="./public/img/slider/slide3_desctop.jpg")
+								img(src="./public/img/slider/slide3_mob.jpg", alt="")
+					.swiper-pagination
+			.about_company
+				.about_company__button
+					a(href="#").button.button--red.button--big
+						span COMMERCIAL PROPOSAL
+				.about_company__container
+					.about_company__grid
+						.about_company__head 
+							| ABOUT 
+							span Company
+						.about_company__items
+							.about_company__item
+								.about_company__descr since
+								.about_company__content 2013
+							.about_company__item
+								.about_company__descr Over
+								.about_company__content 2000
+								.about_company__descr screens
+							.about_company__item
+								.about_company__descr Over
+								.about_company__content 1000
+								.about_company__descr satisfied clients
+			.special_packages
+				.special_packages__container
+					.special_packages__head special packageS 
+					.special_packages__items
+						.special_packages__item_wrap
+							.special_packages__item
+								.special_packages__item_head 1 package 
+								.special_packages__item_descr 
+									| for 
+									span 6
+									|  months 
+								.special_packages__item_count -10%
+
+						.special_packages__item_wrap
+							.special_packages__item
+								.special_packages__item_head 1 package
+								.special_packages__item_descr 
+									| for 
+									span 12
+									| months  
+								.special_packages__item_count -20%
+
+						.special_packages__item_wrap
+							.special_packages__item
+								.special_packages__item_head 3 packages
+								.special_packages__item_descr
+									| for 
+									span 12
+									|  months
+								.special_packages__item_count -20%
+							.special_packages__more + basic video for free
+
+						.special_packages__item_wrap
+							.special_packages__item
+								.special_packages__item_head 5 packages
+								.special_packages__item_descr
+									| for 
+									span 12
+									|  months
+								.special_packages__item_count -35%
+							.special_packages__more + basic video for free
+
+			.average
+				.container
+					.average__head
+						.average__head_content Average cost of<br> one impression
+						.average__head_count
+							span $0,002
+
+					.average__buttons
+						.average__buttons_img 
+							img(src="./public/img/average_collage.png", alt="")
+
+						.average__buttons_wrap
+							button(data-popup="callback").button.button--red.button--middle
+								span REQUEST CALLBACK
+							button(data-popup="contacts").button.button--transparent.button--middle
+								span CONTACT US
+			
+			.package
+				.container
+					.package__head Choose your package 
+					table.package__table
+						thead 
+							tr 
+								td Packages
+								td Monthly <br>Impressions
+								td 1 Month
+								td 6 Months <br>(10% Discount)
+								td 12 Months <br>(20% Discount)
+						tbody
+							tr 
+								td Manhattan
+								td 2.9M
+								td $990
+								td $5.340
+								td $9.480
+							tr 
+								td Brooklyn
+								td 34.8M
+								td $2.590
+								td $14.340
+								td $25.080
+							tr 
+								td Queens
+								td 11.2M
+								td $990
+								td $5.340
+								td $9480
+							tr 
+								td Florida
+								td 6.9M
+								td $990
+								td $5.340
+								td $9480
+							tr 
+								td Philadelphia
+								td 18.6M
+								td $1.490
+								td $8.040
+								td $14.280
+							tr 
+								td New Jersey
+								td 14.7M
+								td $990
+								td $5.340
+								td $9480
+							tr 
+								td Chicago
+								td 8M
+								td $1.490
+								td $8.040
+								td $14.280
+							tr 
+								td MatchPoint Network
+								td 10.2M
+								td $990
+								td $5.340
+								td $9.480
+							tr 
+								td NetCost Markets
+								td 34.5M
+								td $1.614 <br>any 1 location
+								td $1.614 <br>any 1 location
+								td $1.614 <br>for any 1 location
+							tr 
+								td Elevators and <br>Car Services
+								td 40M
+								td $1.290
+								td $6.960
+								td $12.360
+
+			.led_trucks
+				.container
+					.led_trucks__wrap
+						.led_trucks__head LED TRUCKS
+						.led_trucks__img 
+							img(src="./public/img/led_trucks.png", alt="")
+						.led_trucks__descr
+							.led_trucks__descr_top SOLO TRUCK
+							.led_trucks__descr_bottom
+								.led_trucks__descr_count $150
+								.led_trucks__descr_content per hour <br>(minimum <br>6 hours)
+
+					.led_trucks__weeks
+						.led_trucks__weeks_item
+							.led_trucks__weeks_head 4 weeks
+							.led_trucks__weeks_count $1,290
+						.led_trucks__weeks_item
+							.led_trucks__weeks_head 24 weeks
+							.led_trucks__weeks_count $1,090
+						.led_trucks__weeks_item
+							.led_trucks__weeks_head 48 weeks
+							.led_trucks__weeks_count $990
+
+					.led_trucks__buttons_wrap
+						button(data-popup="callback").button.button--red.button--middle
+							span REQUEST CALLBACK
+						button(data-popup="contacts").button.button--transparent.button--middle
+							span CONTACT US
+			
+			.production
+				.container
+					.production__head Production
+					.production__wrap
+						.production__item 
+							.production__icon
+								img(src="./public/img/production/ic1.svg", alt="")
+							.production__min_head Still picture <br>design
+							.production__count $199
+						.production__item 
+							.production__icon
+								img(src="./public/img/production/ic2.svg", alt="")
+							.production__min_head Basic video <br>without filming
+							.production__count $590
+							.production__descr (15 seconds)
+						.production__item 
+							.production__icon
+								img(src="./public/img/production/ic3.svg", alt="")
+							.production__min_head Commercial <br>video filming
+							.production__count $2,990
+							.production__descr (15, 30 and 60 seconds)
+						.production__item 
+							.production__icon
+								img(src="./public/img/production/ic4.svg", alt="")
+							.production__min_head Creative <br>commercial video
+							.production__count $3,990
+							.production__descr (15, 30, 60+ seconds)
+						.production__item 
+							.production__icon
+								img(src="./public/img/production/ic5.svg", alt="")
+							.production__min_head Rent Geometria <br>production studio
+							.production__count $190
+							.production__descr (per hour)
+
+					.production__img
+						img(src="./public/img/production.png", alt="")
+
+					.production__buttons_wrap
+						button(data-popup="callback").button.button--red.button--middle
+							span REQUEST CALLBACK
+						button(data-popup="contacts").button.button--transparent.button--middle
+							span CONTACT US
+
+			.testimonials
+				.container
+					.testimonials__head Client testimonials 
+
+				.testimonials__slider.swiper
+					.testimonials__slider_wrap.swiper-wrapper
+						.testimonials__slide.swiper-slide
+							//- video(src="./public/video/")
+							img(src="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.png", alt="")
+							.testimonials__play(data-popu="video1")
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide
+							//- video(src="./public/video/")
+							img(src="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.png", alt="")
+							.testimonials__play(data-popu="video1")
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide
+							//- video(src="./public/video/")
+							img(src="./public/video/Brooklyn Motors/Brooklyn Motors.png", alt="")
+							.testimonials__play(data-popu="video2")
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide
+							//- video(src="./public/video/")
+							img(src="./public/video/Brooklyn Motors/Brooklyn Motors.png", alt="")
+							.testimonials__play(data-popu="video2")
+								img(src="./public/img/play_button.svg", alt="")
+
+					.swiper-pagination
+
+			.our_clients
+				.container
+					.our_clients__head Our Clients
+				.our_clients__slider_main_wrap
+					.our_clients__slider.swiper
+						.our_clients__slider_wrap.swiper-wrapper
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 5.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 4.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 3.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 2.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 5-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 4-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 3-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 2-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 5.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 4.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 3.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 2.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 5-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 4-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 3-1.svg", alt="")
+							.our_clients__slide.swiper-slide
+								img(src="./public/img/our_clients/Duracell_logo 2-1.svg", alt="")
+							
+
+						.our_clients__button.our_clients__button--prev.swiper-button-prev
+							include ../../public/img/prev_ic.svg
+						.our_clients__button.our_clients__button--next.swiper-button-next
+							include ../../public/img/next_ic.svg
+						.swiper-pagination
+			footer.footer
+				.footer__wrap
+					.footer__logo_side
+						a(href="#").footer__logo
+							img(src="./public/img/logo.svg", alt="")
+						a(href="tel:910 777 7770").footer__tel
+							span 910 777 7770
+					.footer__socials_side
+						.footer__socials
+							a(href="#").footer__social
+								img(src="./public/img/socials/in.svg", alt="")
+							a(href="#").footer__social
+								img(src="./public/img/socials/fb.svg", alt="")
+							a(href="#").footer__social
+								img(src="./public/img/socials/instagram.svg", alt="")
+						a(href="#").button.button--red
+							span commercial proposal
+							img(src="./public/img/pdf.svg", alt="")
+			
+			.popup 
+				.popup__item.video2
+					.popup__content
+						.popup__close 
+							img(src="./public/img/close.svg", alt="")
+						video(src="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.mp4" controls="" preload='auto' playsinline='' plays-inline='' poster="./public/video/Best Deal Auto Leasing/Best Deal Auto Leasing.png") 
+				.popup__item.video1
+					.popup__content
+						.popup__close 
+							img(src="./public/img/close.svg", alt="")
+						video(src="./public/video/Brooklyn Motors/Brooklyn Motors.mp4" preload='auto' controls="" playsinline='' plays-inline='' poster="./public/video/Brooklyn Motors/Brooklyn Motors.png") 
+
+		include includes/foot

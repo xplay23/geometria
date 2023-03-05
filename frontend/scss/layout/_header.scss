@@ -1,0 +1,57 @@
+.header{
+    font-size: 1rem;
+    padding: 5.2em 0;
+    &__wrap{
+        max-width: em(1800);
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo_side{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        width: em(253);
+    }
+    &__slogan{
+        font-size: em(30);
+        font-family: 'Oswald';
+        font-weight: 500;
+        margin-left: em(47,30);
+        padding-left: em(47,30);
+        border-left: em(3,30) solid #E4022F;
+        text-transform: uppercase;
+        span{
+            color: #E4022F;
+        }
+    }
+    &__buttons_side{
+        display: flex;
+        align-items: center;
+        .button{
+            margin-left: em(24,24);
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 2.5em 0;
+        &__wrap{
+            flex-direction: column-reverse;
+        }
+        &__slogan{
+            font-size: em(14);
+        }
+        &__logo_side{
+            margin-top: 2em;
+        }
+        &__logo{
+            width: em(115);
+        }
+        &__buttons_side{
+            .button{
+                margin: 0 em(24 / 2,14);
+            }
+        }
+    }
+}

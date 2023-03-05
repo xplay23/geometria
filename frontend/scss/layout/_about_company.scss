@@ -1,0 +1,116 @@
+.about_company{
+    text-transform: uppercase;
+    padding-bottom: 7.65em;
+    &__container{
+        max-width: em(1700);
+        margin: auto;
+        width: 100%;
+        padding-left: 6.4em;
+    }
+    &__button{
+        text-align: center;
+        margin-bottom: 6.35em;
+    }
+    &__grid{
+        display: flex;
+        // align-items: flex-end;
+    }
+    &__head {
+        font-size: em(110);
+        padding-bottom: 0.30909em;
+        font-family: 'Oswald';
+        font-weight: 500;
+        flex-shrink: 0;
+        margin-right: em(200,110);
+        span{
+            display: block;
+            color: #5E5E5E;
+        }
+    }
+    &__items{
+        flex-shrink: 1;
+        width: 100%;
+        display: flex;
+    }
+    &__item{
+        width: 33%;
+        &:nth-child(1){
+            align-self: flex-end;
+        }
+        &:nth-child(2){
+            align-self: flex-start;
+        }
+        &:nth-child(3){
+            align-self: flex-end;
+            transform: translateY(3em);
+        }
+    }
+    &__descr{
+        font-size: em(34);
+        margin-bottom: -0.4em;
+        margin-top: 0.2em;
+        // font-family: 'Futura PT';
+        // font-weight: normal;
+    }
+    &__content{
+        font-size: em(100);
+        position: relative;
+        font-family: 'Oswald';
+        font-weight: 500;
+        &:before{
+            @include pseudo;
+            bottom: 0;
+            right: 100%;
+            width: em(25,100);
+            margin-right: em(8,100);
+            height: em(37,100);
+            background: #E4022F;
+            transform: skewX(-10deg);
+        }
+    }
+    @media (max-width: 768px) {
+        padding-bottom: 1.25em;
+        &__button{
+            display: none;
+        }
+        &__container{
+            max-width: 21.2em;
+            padding-left: 0;
+        }
+        &__grid{
+            display: block;
+        }
+        &__head {
+            font-size: em(40);
+            margin-right: 0;
+            margin-bottom: 0.4em;
+            span{
+                display: inline;
+            }
+        }
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 1.3em;
+            margin-right: -5em;
+            width: auto;
+        }
+        &__item{
+            width: 50%;
+            margin-bottom: 1.5em;
+            &:nth-child(1){
+                align-self: unset;
+            }
+            &:nth-child(3){
+                transform: none;
+            }
+        }
+        &__descr{
+            font-size: em(18);
+        }
+        &__content{
+            font-size: em(60);
+        }
+    }
+}
