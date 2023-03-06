@@ -59,3 +59,14 @@ body {
 [data-popup]{
   cursor: pointer;
 }
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{
+  transform: scale(1);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{
+  transform: scale(0);
+}
+.swiper-pagination-bullet{
+  margin: 0 em(12);
+}

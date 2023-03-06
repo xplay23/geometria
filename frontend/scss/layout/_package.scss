@@ -68,7 +68,11 @@
         &__table_wrap{
             width: 100%;
             overflow-x: auto;
-            padding: 0 1.3em;
+            padding: 0 1.3em 2em;
+            @include scrollbars(4px,#e4022f,#616161);
+            &::-webkit-scrollbar-track {
+                border: 1px solid #000;
+            }
         }
         &__table{
             width: 55.5em;
