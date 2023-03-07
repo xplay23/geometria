@@ -56,6 +56,7 @@
         width: 100%;
         .button{
             margin: 0 em(24 / 2,24);
+            z-index: 1;
         }
     }
     &__fly{
@@ -66,7 +67,6 @@
         margin: 24em 0 0 -71em;
     }
     @media (max-width: 768px) {
-        // max-width: 21em;
         margin-bottom: 2.55em;
         &__head{
             font-size: em(40);

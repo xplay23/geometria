@@ -59,10 +59,6 @@ gulp.task('js',  function() {
 		.pipe(browserSync.stream());
 });
 
-
-
-
-
 gulp.task('lint', gulp.series('js', function () {
 	return gulp.src('../frontend/js/*.js')
 		.pipe(eslint({configFile: './eslintrc.js'}))
