@@ -12,9 +12,9 @@ html
 						.header__slogan
 							| Take your <span>brand</span>, <span>business</span>,<br> and <span>culture</span> to the next level
 					.header__buttons_side
-						button(data-popup="callback").button.button--red
+						button(type="button", data-popup="callback").button.button--red
 							span REQUEST CALLBACK
-						button(data-popup="contacts").button.button--transparent
+						button(type="button", data-popup="contacts").button.button--transparent
 							span CONTACT US
 			.main_bnr
 				.main_bnr__slider.swiper
@@ -39,11 +39,12 @@ html
 				.about_company__button
 					a(href="#").button.button--red.button--big
 						span COMMERCIAL PROPOSAL
+						img(src="./public/img/pdf.svg", alt="")
 				.about_company__container
 					.about_company__grid
 						.about_company__head 
 							| ABOUT 
-							span Company
+							span US
 						.about_company__items
 							.about_company__item
 								.about_company__descr since
@@ -112,9 +113,9 @@ html
 							img(src="./public/img/average_collage.png", alt="")
 
 						.average__buttons_wrap
-							button(data-popup="callback").button.button--red.button--middle
+							button(type="button", data-popup="callback").button.button--red.button--middle
 								span REQUEST CALLBACK
-							button(data-popup="contacts").button.button--transparent.button--middle
+							button(type="button", data-popup="contacts").button.button--transparent.button--middle
 								span CONTACT US
 				.average__fly
 					img(src="./public/img/fly/fly3.png", alt="")
@@ -134,64 +135,64 @@ html
 							tbody
 								tr 
 									td Manhattan
-									td 2.9M
+									td 2,9M
 									td $990
-									td $5.340
-									td $9.480
+									td $5,340
+									td $9,480
 								tr 
 									td Brooklyn
-									td 34.8M
-									td $2.590
-									td $14.340
-									td $25.080
+									td 34,8M
+									td $2,590
+									td $14,340
+									td $25,080
 								tr 
 									td Queens
-									td 11.2M
+									td 11,2M
 									td $990
-									td $5.340
+									td $5,340
 									td $9480
 								tr 
 									td Florida
-									td 6.9M
+									td 6,9M
 									td $990
-									td $5.340
+									td $5,340
 									td $9480
 								tr 
 									td Philadelphia
-									td 18.6M
-									td $1.490
-									td $8.040
-									td $14.280
+									td 18,6M
+									td $1,490
+									td $8,040
+									td $14,280
 								tr 
 									td New Jersey
-									td 14.7M
+									td 14,7M
 									td $990
-									td $5.340
+									td $5,340
 									td $9480
 								tr 
 									td Chicago
 									td 8M
-									td $1.490
-									td $8.040
-									td $14.280
+									td $1,490
+									td $8,040
+									td $14,280
 								tr 
 									td MatchPoint Network
-									td 10.2M
+									td 10,2M
 									td $990
-									td $5.340
-									td $9.480
+									td $5,340
+									td $9,480
 								tr 
 									td NetCost Markets
-									td 34.5M
-									td $1.614 <br>any 1 location
-									td $1.614 <br>any 1 location
-									td $1.614 <br>for any 1 location
+									td 34,5M
+									td $1,614 <br>any 1 location
+									td $1,614 <br>any 1 location
+									td $1,614 <br>any 1 location
 								tr 
 									td Elevators and <br>Car Services
 									td 40M
-									td $1.290
-									td $6.960
-									td $12.360
+									td $1,290
+									td $6,960
+									td $12,360
 				.package__fly
 					img(src="./public/img/fly/fly4.png", alt="")
 			.led_trucks
@@ -218,9 +219,9 @@ html
 							.led_trucks__weeks_count $990
 
 					.led_trucks__buttons_wrap
-						button(data-popup="callback").button.button--red.button--middle
+						button(type="button", data-popup="callback").button.button--red.button--middle
 							span REQUEST CALLBACK
-						button(data-popup="contacts").button.button--transparent.button--middle
+						button(type="button", data-popup="contacts").button.button--transparent.button--middle
 							span CONTACT US
 				.led_trucks__fly
 					img(src="./public/img/fly/fly5.png", alt="")
@@ -244,7 +245,7 @@ html
 								img(src="./public/img/production/ic3.svg", alt="")
 							.production__min_head Commercial <br>video filming
 							.production__count $2,990
-							.production__descr (15, 30 and 60 seconds)
+							.production__descr (15, 30 or 60 seconds)
 						.production__item 
 							.production__icon
 								img(src="./public/img/production/ic4.svg", alt="")
@@ -265,9 +266,9 @@ html
 					
 
 				.production__buttons_wrap
-					button(data-popup="callback").button.button--red.button--middle
+					button(type="button", data-popup="callback").button.button--red.button--middle
 						span REQUEST CALLBACK
-					button(data-popup="contacts").button.button--transparent.button--middle
+					button(type="button", data-popup="contacts").button.button--transparent.button--middle
 						span CONTACT US
 				.production__fly
 					img(src="./public/img/fly/fly6.png", alt="")
@@ -277,25 +278,29 @@ html
 
 				.testimonials__slider.swiper
 					.testimonials__slider_wrap.swiper-wrapper
-						.testimonials__slide.swiper-slide
-							//- video(src="./public/video/")
+						.testimonials__slide.swiper-slide(data-popup="video1")
 							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
-							.testimonials__play(data-popup="video1")
+							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide
-							//- video(src="./public/video/")
+						.testimonials__slide.swiper-slide(data-popup="video1")
 							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
-							.testimonials__play(data-popup="video1")
+							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide
-							//- video(src="./public/video/")
+						.testimonials__slide.swiper-slide(data-popup="video2")
 							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
-							.testimonials__play(data-popup="video2")
+							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide
-							//- video(src="./public/video/")
+						.testimonials__slide.swiper-slide(data-popup="video2")
 							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
-							.testimonials__play(data-popup="video2")
+							.testimonials__play
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide(data-popup="video1")
+							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
+							.testimonials__play
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide(data-popup="video1")
+							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
+							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
 
 					.swiper-pagination
@@ -338,7 +343,6 @@ html
 								img(src="./public/img/our_clients/Duracell_logo-3-1.svg", alt="")
 							.our_clients__slide.swiper-slide
 								img(src="./public/img/our_clients/Duracell_logo-2-1.svg", alt="")
-							
 
 						.our_clients__button.our_clients__button--prev.swiper-button-prev
 							include ../../public/img/prev_ic.svg
@@ -352,8 +356,8 @@ html
 					.footer__logo_side
 						a(href="#").footer__logo
 							img(src="./public/img/logo.svg", alt="")
-						a(href="tel:910 777 7770").footer__tel
-							span 910 777 7770
+						a(href="tel:3479356517").footer__tel
+							span (347) 935 6517
 					.footer__socials_side
 						.footer__socials
 							a(href="#").footer__social
@@ -400,24 +404,22 @@ html
 										| Full name 
 										span *
 									.form__input
-										input(type="text" name="" placeholder="First Name")
+										input(type="text" name="" placeholder="Full Name")
 								.form__grid
 									label.form__label
 										.form__input_name 
-											| Email 
-											span *
-										.form__input
-											input(type="text" name="" placeholder="Email")
-									label.form__label.form__label--error.form__label--phone
-										.form__input_name 
-											| Phone Number 
+											| Phone Number
 											span *
 										.form__input
 											input(type="text" name="" placeholder="Phone Number")
-										.form__error
-											| wrong phone number
-								.form__submit 
-									button.button.button--submit.button--red 
+									label.form__label
+										.form__input_name 
+											| Email
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Email")
+								.form__submit
+									button(type="submit").button.button--submit.button--red
 										span send REQUEST
 
 				.popup__item.contacts.form_success
@@ -437,22 +439,20 @@ html
 										| Full name 
 										span *
 									.form__input
-										input(type="text" name="" placeholder="First Name")
+										input(type="text" name="" placeholder="Full Name")
 								.form__grid
 									label.form__label
 										.form__input_name 
-											| Email 
-											span *
-										.form__input
-											input(type="text" name="" placeholder="Email")
-									label.form__label.form__label--error.form__label--phone
-										.form__input_name 
-											| Phone Number 
+											| Phone Number
 											span *
 										.form__input
 											input(type="text" name="" placeholder="Phone Number")
-										.form__error
-											| wrong phone number
+									label.form__label
+										.form__input_name 
+											| Email
+											span *
+										.form__input
+											input(type="text" name="" placeholder="Email")
 								label.form__label
 									.form__input_name 
 										| Message
@@ -460,7 +460,7 @@ html
 										input(type="text" name="" placeholder="type your message")
 
 								.form__submit 
-									button.button.button--submit.button--red 
+									button(type="submit").button.button--submit.button--red
 										span send REQUEST
 
 		include includes/foot

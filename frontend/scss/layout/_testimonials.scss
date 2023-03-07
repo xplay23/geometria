@@ -6,10 +6,9 @@
         left: 50%;
         transform: translate(-50%,-50%);
         width: em(107);
-        opacity: 0;
+        opacity: 1;
         transition: opacity 300ms;
         .swiper-slide-active &{
-            opacity: 1;
         }
     }
     &__head{
@@ -17,23 +16,18 @@
         font-family: 'Oswald';
         font-weight: 500;
         text-transform: uppercase;
-        text-align: right;
+        text-align: center;
     }
     &__slider{
         perspective: 1400px;
         padding: 5.05em 0 11.9em;
     }
     .swiper-pagination{
-        // position: relative;
         font-size: 1em;
-        // width: 100%;
-        // display: flex;
     }
     .swiper-pagination-bullet{
-        // display: flex;
         height: em(3);
         width: em(100);
-        // margin: em(26 / 2) 0;
         opacity: 1;
         border-radius: 0;
         background: #fff;
