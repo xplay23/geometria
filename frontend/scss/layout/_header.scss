@@ -19,11 +19,14 @@
         text-align: center;
         // width: 100%;
         margin-top: 1em;
+        margin-left: auto;
+        width: em(286);
+        margin-left: em(24);
     }
     &__tel{
         font-size: em(34);
         font-weight: 700;
-        // margin-right: em(48,34);
+        margin-right: em(10,34);
     }
     &__slogan{
         font-size: em(30);
@@ -36,6 +39,10 @@
         span{
             color: #E4022F;
         }
+    }
+    &__buttons_wrap{
+        // display: flex;
+        // align-items: center;
     }
     &__buttons_side{
         display: inline-flex;
@@ -65,7 +72,7 @@
             width: 100%;
             text-align: center;
             order: 2;
-            margin-top: 1.2em;
+            margin: 1.2em 0 0;
         }
         &__tel{
             font-size: em(24);
