@@ -120,7 +120,7 @@ $$('.testimonials__slider', function (el) {
             clickable: true
         },
         loop: true,
-        initialSlide: 1,
+        initialSlide: 0,
         effect: "coverflow",
         centeredSlides: true,
         slidesPerView: 1,
@@ -172,3 +172,15 @@ $$('.popup__close', function (el) {
 
     });
 });
+
+function initTestimonialVideoGallery() {
+
+    lightGallery(document.getElementById('js-testimonial-gallery'), {
+        plugins: [lgVideo],
+        speed: 500,
+        licenseKey: 'your_license_key',
+    });
+
+}
+
+initTestimonialVideoGallery();

@@ -4,7 +4,6 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	axis = require('axis'),
 	cssnano = require('gulp-cssnano'),
-	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	babel = require('gulp-babel'),
 	pug = require('gulp-pug'),
@@ -54,7 +53,6 @@ gulp.task('js',  function() {
 		.pipe(babel({
 			presets: ['@babel/env']
 		}))
-		.pipe(uglify())
 		.pipe(gulp.dest('../public/js/'))
 		.pipe(browserSync.stream());
 });

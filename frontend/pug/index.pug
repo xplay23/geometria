@@ -277,28 +277,28 @@ html
 					.testimonials__head Client testimonials
 
 				.testimonials__slider.swiper
-					.testimonials__slider_wrap.swiper-wrapper
-						.testimonials__slide.swiper-slide(data-popup="video1")
+					.testimonials__slider_wrap.swiper-wrapper#js-testimonial-gallery
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
+							img(src="/public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
+							.testimonials__play
+								img(src="./public/img/play_button.svg", alt="")
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
 							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
 							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide(data-popup="video1")
-							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
-							.testimonials__play
-								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide(data-popup="video2")
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
 							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
 							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide(data-popup="video2")
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
 							img(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg", alt="")
 							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide(data-popup="video1")
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
 							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
 							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
-						.testimonials__slide.swiper-slide(data-popup="video1")
+						.testimonials__slide.swiper-slide(data-lg-size="1280-720", data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k", data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
 							img(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg", alt="")
 							.testimonials__play
 								img(src="./public/img/play_button.svg", alt="")
@@ -371,23 +371,8 @@ html
 							img(src="./public/img/pdf.svg", alt="")
 			
 			.popup 
-				.popup__item.video1
-					.popup__close.popup__close--overlay
-					.popup__content_wrap.popup__content_wrap--video
-						.popup__close.popup__close--button
-							img(src="./public/img/close.svg", alt="")
-						.popup__content
-							video(src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4" controls="" preload='auto' playsinline='' plays-inline='' poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg")
-				
-				.popup__item.video2
-					.popup__close.popup__close--overlay
-					.popup__content_wrap.popup__content_wrap--video
-						.popup__close.popup__close--button
-							img(src="./public/img/close.svg", alt="")
-						.popup__content
-							video(src="./public/video/Brooklyn-Motors/Brooklyn-Motors.mp4" preload='auto' controls="" playsinline='' plays-inline='' poster="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg")
-				
-				.popup__item.callback.form_error
+
+				.popup__item.callback
 					.popup__close.popup__close--overlay
 					.popup__content_wrap
 

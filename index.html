@@ -7,6 +7,7 @@
     <link rel="icon" href="./public/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/js/light-gallery/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="./public/css/style.min.css">
   </head>
   <body>
@@ -303,23 +304,23 @@
           <div class="testimonials__head">Client testimonials</div>
         </div>
         <div class="testimonials__slider swiper">
-          <div class="testimonials__slider_wrap swiper-wrapper">
-            <div class="testimonials__slide swiper-slide" data-popup="video1"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
+          <div class="testimonials__slider_wrap swiper-wrapper" id="js-testimonial-gallery">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="/public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
-            <div class="testimonials__slide swiper-slide" data-popup="video1"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
-            <div class="testimonials__slide swiper-slide" data-popup="video2"><img src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg" alt="">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
-            <div class="testimonials__slide swiper-slide" data-popup="video2"><img src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg" alt="">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
-            <div class="testimonials__slide swiper-slide" data-popup="video1"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
-            <div class="testimonials__slide swiper-slide" data-popup="video1"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
+            <div class="testimonials__slide swiper-slide" data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=IbCX7W-zv6k" data-poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"><img src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg" alt="">
               <div class="testimonials__play"><img src="./public/img/play_button.svg" alt=""></div>
             </div>
           </div>
@@ -374,25 +375,7 @@
         </div>
       </footer>
       <div class="popup"> 
-        <div class="popup__item video1">
-          <div class="popup__close popup__close--overlay"></div>
-          <div class="popup__content_wrap popup__content_wrap--video">
-            <div class="popup__close popup__close--button"><img src="./public/img/close.svg" alt=""></div>
-            <div class="popup__content">
-              <video src="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.mp4" controls="" preload="auto" playsinline="" plays-inline="" poster="./public/video/Best-Deal-Auto-Leasing/Best-Deal-Auto-Leasing.jpg"></video>
-            </div>
-          </div>
-        </div>
-        <div class="popup__item video2">
-          <div class="popup__close popup__close--overlay"></div>
-          <div class="popup__content_wrap popup__content_wrap--video">
-            <div class="popup__close popup__close--button"><img src="./public/img/close.svg" alt=""></div>
-            <div class="popup__content">
-              <video src="./public/video/Brooklyn-Motors/Brooklyn-Motors.mp4" preload="auto" controls="" playsinline="" plays-inline="" poster="./public/video/Brooklyn-Motors/Brooklyn-Motors.jpg"></video>
-            </div>
-          </div>
-        </div>
-        <div class="popup__item callback form_error">
+        <div class="popup__item callback">
           <div class="popup__close popup__close--overlay"></div>
           <div class="popup__content_wrap">
             <div class="popup__close popup__close--button"><img src="./public/img/close.svg" alt=""></div>
@@ -478,6 +461,10 @@
       </div>
     </div>
     <script src="./public/js/swiper-bundle.min.js"></script>
+    <script src="./public/js/light-gallery/plugins/video/lg-video.min.js"></script>
+    <script src="./public/js/light-gallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="./public/js/light-gallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="./public/js/light-gallery/lightgallery.min.js"></script>
     <script src="./public/js/main.min.js"></script>
   </body>
 </html>
