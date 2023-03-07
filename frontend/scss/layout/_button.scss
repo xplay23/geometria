@@ -11,6 +11,7 @@
     font-weight: 500;
     background: transparent;
     cursor: pointer;
+    @include transition(300ms,background,border-color,color);
     img{
         width: em(24,24);
         margin-left: em(24,24);
@@ -19,10 +20,17 @@
         color: #fff;
         background: #E4022F;
         border-color: #E4022F;
+        @include pointer{
+            background: transparent;
+        }
     }
     &--transparent{
         color: #fff;
         border-color: #fff;
+        @include pointer{
+            background: #fff;
+            color: #121212;
+        }
     }
     &--small{
         

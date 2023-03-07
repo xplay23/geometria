@@ -15,6 +15,16 @@
     &__logo{
         width: em(253);
     }
+    &__tel_wrap{
+        text-align: center;
+        // width: 100%;
+        margin-top: 1em;
+    }
+    &__tel{
+        font-size: em(34);
+        font-weight: 700;
+        // margin-right: em(48,34);
+    }
     &__slogan{
         font-size: em(30);
         font-family: 'Oswald';
@@ -28,8 +38,11 @@
         }
     }
     &__buttons_side{
-        display: flex;
+        display: inline-flex;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
         .button{
             margin-left: em(24,24);
         }
@@ -48,7 +61,18 @@
         &__logo{
             width: em(115);
         }
+        &__tel_wrap {
+            width: 100%;
+            text-align: center;
+            order: 2;
+            margin-top: 1.2em;
+        }
+        &__tel{
+            font-size: em(24);
+        }
         &__buttons_side{
+            flex-wrap: wrap;
+            justify-content: center;
             .button{
                 margin: 0 em(24 / 2,14);
             }

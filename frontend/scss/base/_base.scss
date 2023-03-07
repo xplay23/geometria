@@ -59,14 +59,24 @@ body {
 [data-popup]{
   cursor: pointer;
 }
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{
+  transform: scale(1);
+  opacity: 0!important;
+}
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{
   transform: scale(1);
+  opacity: 1!important;
 }
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev,
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{
-  transform: scale(0);
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{
+  opacity: 1!important;
 }
 .swiper-pagination-bullet{
   margin: 0 em(12);
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  transition: .2s transform, .2s left, opacity .2s, background 200ms;
 }
