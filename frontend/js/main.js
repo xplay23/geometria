@@ -96,7 +96,7 @@ $$('.our_clients__slider', function (el) {
             el: $$(".swiper-pagination", el)[0],
             type: 'bullets',
             clickable: true,
-            dynamicBullets: true
+            // dynamicBullets: true
         },
         breakpoints: {
             769: {
