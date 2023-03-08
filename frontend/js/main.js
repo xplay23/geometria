@@ -72,6 +72,9 @@ function debugging() {
 
 $$('.main_bnr__slider', function (el) {
     var swiper = new Swiper(el, {
+        autoplay: {
+            delay: 2150
+        },
         pagination: {
             el: $$(".swiper-pagination", el)[0],
             type: 'bullets',
@@ -96,7 +99,6 @@ $$('.our_clients__slider', function (el) {
             el: $$(".swiper-pagination", el)[0],
             type: 'bullets',
             clickable: true,
-            // dynamicBullets: true
         },
         breakpoints: {
             769: {
